@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=development nodemon ./bin/www",
+    "seed": "node createdb.js"
   },
   "repository": {
     "type": "git",
@@ -16,9 +18,28 @@
     "url": "https://github.com/amostap/AdvancedNode/issues"
   },
   "homepage": "https://github.com/amostap/AdvancedNode#readme",
+  "dependencies": {
+    "async": "^2.5.0",
+    "body-parser": "~1.17.1",
+    "connect-mongo": "^1.3.2",
+    "cookie-parser": "~1.4.3",
+    "cross-env": "^5.0.1",
+    "debug": "~2.6.3",
+    "ejs": "~2.5.6",
+    "express": "~4.15.2",
+    "express-session": "^1.15.3",
+    "mongodb": "^2.2.30",
+    "mongoose": "^4.10.8",
+    "morgan": "~1.8.1",
+    "nconf": "^0.8.4",
+    "serve-favicon": "~2.4.2",
+    "winston": "^2.3.1"
+  },
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.2.0"
-  }
+    "eslint-plugin-import": "^2.2.0",
+    "nodemon": "^1.11.0"
+  },
+  "false": {}
 }
